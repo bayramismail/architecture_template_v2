@@ -21,6 +21,10 @@ dependencies:
   json_annotation: ^4.8.1
   envied: ^0.5.2
   easy_localization: ^3.0.3
+
+  #Utility 
+  easy_logger: ^0.0.2
+  logger: ^2.0.2+1
 # dependency_overrides:
 widgets:
   path: module/widgets
@@ -51,7 +55,7 @@ flutter:
 
   
   assets:
-     - assets/translations/
+     - asset/translations/
   #   - images/a_dot_ham.jpeg
 
   

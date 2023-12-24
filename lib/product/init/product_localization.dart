@@ -14,10 +14,15 @@ final class ProductLocalization extends EasyLocalization {
         );
 
   static final List<Locale> _supportedItems = Locales.supportedLocales;
-  static const String _translationPath = 'assets/translations';
+  static const String _translationPath = 'asset/translations';
 
   ///Change project language by using [Locales]
   static Future<void> updateLanguage(
           {required BuildContext context, required Locales value}) =>
       context.setLocale(value.locale);
 }
+//Not:
+//Bunu terminal de çalıstrırsan json nesnelerin içindekileri otomatik oluşturur.
+//sh script/lang.sh 
+//Not2: Buda module oluşturmak için 
+//flutter create  --template=package core  
