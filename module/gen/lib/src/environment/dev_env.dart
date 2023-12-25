@@ -1,11 +1,11 @@
 // lib/env/env.dart
-import 'package:architecture_template_v2/product/init/config/app_configuration.dart';
 import 'package:envied/envied.dart';
+import 'package:gen/src/environment/app_configuration.dart';
 
 part 'dev_env.g.dart';
 
 @Envied(
-  path: 'asset/env/.dev.env',
+  path: 'assets/env/.dev.env',
   obfuscate: true,
 )
 

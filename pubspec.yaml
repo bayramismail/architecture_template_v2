@@ -3,7 +3,6 @@ description: "A new Flutter project."
 
 publish_to: 'none' 
 
-
 version: 1.0.0+1
 
 environment:
@@ -24,8 +23,6 @@ dependencies:
   flutter_riverpod: ^2.4.9
 
   #Config
-  envied: ^0.5.2
-  json_annotation: ^4.8.1
   easy_localization: ^3.0.3
 
   #Utility 
@@ -35,17 +32,16 @@ dependencies:
   google_fonts: ^6.1.0
 
 # dependency_overrides:
-widgets:
-  path: module/widgets
+  widgets:
+     path: module/widgets
+  gen:
+    path: module/gen
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   very_good_analysis: ^5.1.0
-  build_runner: ^2.4.7
-  flutter_gen_runner: ^5.3.2
   flutter_launcher_icons: ^0.13.1
-  envied_generator: ^0.5.2
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -54,13 +50,8 @@ flutter_launcher_icons:
   min_sdk_android: 21 # android min sdk min:16, default 21
   remove_alpha_ios: true
 
-flutter_gen:
-  output: lib/product/generated/
-  integrations:
-     lottie: true
 
 flutter:
- 
   uses-material-design: true
 
   
