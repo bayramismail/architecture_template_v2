@@ -39,6 +39,8 @@ dependencies:
      path: module/widgets
   gen:
     path: module/gen
+  common: 
+    path: module/common
 
 dev_dependencies:
   flutter_test:

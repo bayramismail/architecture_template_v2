@@ -4,6 +4,7 @@ import 'package:architecture_template_v2/product/init/language/locale_keys.g.dar
 import 'package:architecture_template_v2/product/init/product_localization.dart';
 import 'package:architecture_template_v2/product/navigation/app_router.dart';
 import 'package:architecture_template_v2/product/utility/constans/enums/locales.dart';
+import 'package:architecture_template_v2/product/widget/project_network_image.dart';
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -31,6 +32,7 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
         children: [
           Assets.lottie.animZombie.lottie(package: 'gen'),
           Assets.images.imgFlags.image(package: 'gen'),
+          ProjectNetworkImage(url: ""),
           ElevatedButton(
             onPressed: () {},
             child: Text(AppEnvironmentItems.apiKey.value),
