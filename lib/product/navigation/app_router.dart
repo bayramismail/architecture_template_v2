@@ -12,7 +12,7 @@ class AppRouter extends _$AppRouter {
   static const _replaceRouteName = "View,Route";
   @override
   List<AutoRoute> get routes => [
-        AutoRoute(path: 'home/:id', page: HomeRoute.page, initial: true),
+        AutoRoute(page: HomeRoute.page, initial: true),
         AutoRoute(
           page: HomeDetailRoute.page,
         ),
