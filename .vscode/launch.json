@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Flutter: Run all Tests",
+            "type": "dart",
+            "request": "launch",
+            "program": "./test/network/network_manager_test.dart"
+        },
+        {
             "name": "architecture_template_v2",
             "request": "launch",
             "type": "dart"
