@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:architecture_template_v2/product/init/config/app_environment.dart';
+import 'package:architecture_template_v2/product/state/container/app_state_container.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_logger/easy_logger.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,9 @@ final class ApplicationInitialize {
     };
 
     AppEnvironment.general();
+
+    ///It must be call after [AppEnvironment.general()]
+    AppContainer.setup();
     // Dependency initialize
     // env
   }
