@@ -1,7 +1,2 @@
-library core;
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/cache/core/index.dart'; // show CacheModel, CacheOperation;
+export 'src/cache/hive/index.dart';

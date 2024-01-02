@@ -38,6 +38,8 @@ dependencies:
 
 # dependency_overrides:
 # Modules
+  core:
+     path: module/core
   widgets:
      path: module/widgets
   gen:
