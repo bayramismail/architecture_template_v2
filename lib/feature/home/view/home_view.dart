@@ -5,6 +5,7 @@ import 'package:architecture_template_v2/product/init/config/app_environment.dar
 import 'package:architecture_template_v2/product/init/language/locale_keys.g.dart';
 import 'package:architecture_template_v2/product/navigation/app_router.dart';
 import 'package:architecture_template_v2/product/state/base/base_state.dart';
+import 'package:architecture_template_v2/product/state/view_model/app_view_model.dart';
 import 'package:architecture_template_v2/product/widget/project_network_image.dart';
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
@@ -35,7 +36,9 @@ class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
           onPressed: () async {
             homeViewModel.changeLoading();
             await homeViewModel.fetchUsers();
-
+            // BlocProvider.of<AppViewModel>(context)
+            //     .changeThemeMode(ThemeMode.dark);
+            appViewModel.changeThemeMode(ThemeMode.dark);
             homeViewModel.changeLoading();
             // SuccessDialog.show(title: "Gül", context: context);
           },
